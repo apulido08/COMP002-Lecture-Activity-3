@@ -10,3 +10,15 @@ if(diameter > 0) {
     let circumference = pi * diameter;
     console.log("The circumference is: " + circumference);
 }
+
+function printHello1() {
+    console.log("This is printHello1()");
+}
+
+function printHello2() {
+    console.log("This is printHello2()");
+    printHello1();
+}
+
+printHello2();
+printHello1();
