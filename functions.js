@@ -22,3 +22,20 @@ function printHello2() {
 
 printHello2();
 printHello1();
+
+function greet(Bob) {
+    console.log("Hello, " + Bob + "!")
+}
+
+greet("Bob");
+
+
+
+const chicken = () => {
+    return egg();
+};
+const egg = () => {
+    return chicken();
+};
+
+console.log(chicken () );
